@@ -1,7 +1,7 @@
 /******************************************************************************
  * This file is part of tf2-bot.                                              *
  *                                                                            *
- * Foobar is free software: you can redistribute it and/or modify             *
+ * tf2-bot is free software: you can redistribute it and/or modify            *
  * it under the terms of the GNU General Public License as published by       *
  * the Free Software Foundation, either version 3 of the License, or          *
  * (at your option) any later version.                                        *
@@ -16,12 +16,6 @@
  ******************************************************************************/
 
 package pojos;
-
-/**
- * User: Rory
- * Date: 2/26/12
- * Time: 3:09 PM
- */
 
 public enum Metal {
     SCRAP,

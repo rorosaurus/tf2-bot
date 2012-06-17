@@ -15,23 +15,26 @@
  * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
  ******************************************************************************/
 
-package system;
+package org.json;
 
-import javax.swing.*;
+public class JSONException extends Exception {
+    private static final long serialVersionUID = 0;
+    private Throwable cause;
 
-public class Outputter {
-
-    private JTextArea jTextArea;
-
-    public Outputter(JTextArea area) {
-        jTextArea = area;
+    /**
+     * Constructs a JSONException with an explanatory message.
+     * @param message Detail about the reason for the exception.
+     */
+    public JSONException(String message) {
+        super(message);
     }
 
-    public void output(String message) {
-        jTextArea.setText(jTextArea.getText() + "\n" + message);
+    public JSONException(Throwable cause) {
+        super(cause.getMessage());
+        this.cause = cause;
     }
 
-    public void outputNewline() {
-        jTextArea.setText(jTextArea.getText() + "\n");
+    public Throwable getCause() {
+        return this.cause;
     }
 }

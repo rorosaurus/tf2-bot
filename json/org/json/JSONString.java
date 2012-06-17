@@ -15,23 +15,13 @@
  * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
  ******************************************************************************/
 
-package system;
-
-import javax.swing.*;
-
-public class Outputter {
-
-    private JTextArea jTextArea;
-
-    public Outputter(JTextArea area) {
-        jTextArea = area;
-    }
-
-    public void output(String message) {
-        jTextArea.setText(jTextArea.getText() + "\n" + message);
-    }
-
-    public void outputNewline() {
-        jTextArea.setText(jTextArea.getText() + "\n");
-    }
+package org.json;
+public interface JSONString {
+    /**
+     * The <code>toJSONString</code> method allows a class to produce its own JSON 
+     * serialization. 
+     * 
+     * @return A strictly syntactically correct JSON text.
+     */
+    public String toJSONString();
 }

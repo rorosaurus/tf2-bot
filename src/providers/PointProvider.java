@@ -1,7 +1,7 @@
 /******************************************************************************
  * This file is part of tf2-bot.                                              *
  *                                                                            *
- * Foobar is free software: you can redistribute it and/or modify             *
+ * tf2-bot is free software: you can redistribute it and/or modify            *
  * it under the terms of the GNU General Public License as published by       *
  * the Free Software Foundation, either version 3 of the License, or          *
  * (at your option) any later version.                                        *
@@ -25,12 +25,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.*;
-
-/**
- * User: Rory
- * Date: 3/10/12
- * Time: 12:49 AM
- */
 
 public class PointProvider {
 

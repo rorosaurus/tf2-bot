@@ -15,23 +15,51 @@
  * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
  ******************************************************************************/
 
-package system;
+package org.json;
 
-import javax.swing.*;
 
-public class Outputter {
+public class HTTPTokener extends JSONTokener {
 
-    private JTextArea jTextArea;
-
-    public Outputter(JTextArea area) {
-        jTextArea = area;
+    /**
+     * Construct an HTTPTokener from a string.
+     * @param string A source string.
+     */
+    public HTTPTokener(String string) {
+        super(string);
     }
 
-    public void output(String message) {
-        jTextArea.setText(jTextArea.getText() + "\n" + message);
-    }
 
-    public void outputNewline() {
-        jTextArea.setText(jTextArea.getText() + "\n");
+    /**
+     * Get the next token or string. This is used in parsing HTTP headers.
+     * @throws JSONException
+     * @return A String.
+     */
+    public String nextToken() throws JSONException {
+        char c;
+        char q;
+        StringBuffer sb = new StringBuffer();
+        do {
+            c = next();
+        } while (Character.isWhitespace(c));
+        if (c == '"' || c == '\'') {
+            q = c;
+            for (;;) {
+                c = next();
+                if (c < ' ') {
+                    throw syntaxError("Unterminated string.");
+                }
+                if (c == q) {
+                    return sb.toString();
+                }
+                sb.append(c);
+            }
+        } 
+        for (;;) {
+            if (c == 0 || Character.isWhitespace(c)) {
+                return sb.toString();
+            }
+            sb.append(c);
+            c = next();
+        }
     }
 }

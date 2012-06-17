@@ -1,7 +1,7 @@
 /******************************************************************************
  * This file is part of tf2-bot.                                              *
  *                                                                            *
- * Foobar is free software: you can redistribute it and/or modify             *
+ * tf2-bot is free software: you can redistribute it and/or modify            *
  * it under the terms of the GNU General Public License as published by       *
  * the Free Software Foundation, either version 3 of the License, or          *
  * (at your option) any later version.                                        *
@@ -26,12 +26,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-
-/**
- * User: Rory
- * Date: 3/2/12
- * Time: 4:50 PM
- */
 
 public class Main {
 

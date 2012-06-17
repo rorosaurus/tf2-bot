@@ -15,23 +15,27 @@
  * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
  ******************************************************************************/
 
-package system;
+package org.json;
 
-import javax.swing.*;
+import java.io.StringWriter;
 
-public class Outputter {
-
-    private JTextArea jTextArea;
-
-    public Outputter(JTextArea area) {
-        jTextArea = area;
+public class JSONStringer extends JSONWriter {
+    /**
+     * Make a fresh JSONStringer. It can be used to build one JSON text.
+     */
+    public JSONStringer() {
+        super(new StringWriter());
     }
 
-    public void output(String message) {
-        jTextArea.setText(jTextArea.getText() + "\n" + message);
-    }
-
-    public void outputNewline() {
-        jTextArea.setText(jTextArea.getText() + "\n");
+    /**
+     * Return the JSON text. This method is used to obtain the product of the
+     * JSONStringer instance. It will return <code>null</code> if there was a
+     * problem in the construction of the JSON text (such as the calls to
+     * <code>array</code> were not properly balanced with calls to
+     * <code>endArray</code>).
+     * @return The JSON text.
+     */
+    public String toString() {
+        return this.mode == 'd' ? this.writer.toString() : null;
     }
 }
