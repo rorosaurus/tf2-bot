@@ -40,8 +40,8 @@ public class ScrapBot extends SmartRobot {
 
     // These MUST be replaced with a valid WebAPI key and the 64 bit id of your account
     // TODO: Replace these with values from .properties file
-    private final String WEBKEY = "898102520FDEC3CBC13A211A8B951C6B";
-    private final String ACCOUNT64BITID = "76561198043649643";
+    private final String WEBKEY = "";
+    private final String ACCOUNT64BITID = "";
 
     private final PointProvider pointProvider;
     private Outputter outputter;
