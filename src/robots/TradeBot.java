@@ -32,6 +32,7 @@ public class TradeBot extends SmartRobot {
 
     /**
      * Constructor
+     * @param out outputter to output text to
      * @throws Exception - for the Robot
      * AutoDelay should not be lowered much more
      */

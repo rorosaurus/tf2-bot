@@ -19,6 +19,7 @@ package system;
 
 import javax.swing.*;
 
+// TODO: find a better way to do this, make it run in its own thread
 public class Outputter {
 
     private JTextArea jTextArea;

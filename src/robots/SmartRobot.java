@@ -67,15 +67,15 @@ public class SmartRobot extends Robot{
 
     public void commander(String commands, int delay){
         char [] comm = commands.toCharArray();
-        StringBuffer command = new StringBuffer();
+        StringBuilder command = new StringBuilder();
         int start = 0;
         delay(delay);
         for(int i = 0; i < comm.length; i++){
             int end = i;
             if(comm[i] == ','){
                 command.append(commands.substring(start,end));
-                for(int index = 0; index < validCommands.length; index++){
-                    if(command.toString().equals(validCommands[index])){
+                for (String validCommand : validCommands) {
+                    if (command.toString().equals(validCommand)) {
                         keyPress(getCommandCode(command.toString()));
                     }
                 }
@@ -84,8 +84,8 @@ public class SmartRobot extends Robot{
             }
             if(i == comm.length-1){
                 command.append(commands.substring(start, end+1));
-                for(int index = 0; index < validCommands.length; index++){
-                    if(command.toString().equals(validCommands[index])){
+                for (String validCommand : validCommands) {
+                    if (command.toString().equals(validCommand)) {
                         keyPress(getCommandCode(command.toString()));
                     }
                 }
@@ -100,14 +100,15 @@ public class SmartRobot extends Robot{
 
     public void commanderRelease(String commands, int delay){
         char [] comm = commands.toCharArray();
-        StringBuffer command = new StringBuffer();
+        StringBuffer command;
+        command = new StringBuffer();
         int start = 0;
         for(int i = 0; i < comm.length; i++){
             int end = i;
             if(comm[i] == ','){
                 command.append(commands.substring(start,end));
-                for(int index = 0; index < validCommands.length; index++){
-                    if(command.toString().equals(validCommands[index])){
+                for (String validCommand : validCommands) {
+                    if (command.toString().equals(validCommand)) {
                         keyRelease(getCommandCode(command.toString()));
                     }
                 }
@@ -116,8 +117,8 @@ public class SmartRobot extends Robot{
             }
             if(i == comm.length-1){
                 command.append(commands.substring(start, end+1));
-                for(int index = 0; index < validCommands.length; index++){
-                    if(command.toString().equals(validCommands[index])){
+                for (String validCommand : validCommands) {
+                    if (command.toString().equals(validCommand)) {
                         keyRelease(getCommandCode(command.toString()));
                     }
                 }
@@ -505,8 +506,6 @@ public class SmartRobot extends Robot{
      * @return Point indicating x,y location of first instance found in the screenshot, or null if none is found
      */
     public Point findLocOfImage(String fileLoc, BufferedImage screenshot){
-
-
         // Get Image
         ImageIcon icon = new ImageIcon(System.getProperty("user.dir") + "/src/" + fileLoc);
         Image image = icon.getImage();
@@ -551,7 +550,7 @@ public class SmartRobot extends Robot{
         return location;
     }
 
-    // TODO: this would probably be more effective is RMS value is compared
+    // TODO: this would probably be more effective if RMS value is compared
     private boolean compareRGBs(int first, int second){
 //        boolean same = true;
 
@@ -570,6 +569,6 @@ public class SmartRobot extends Robot{
 
 //        int margin = 90;
 //        return Math.abs(firstred - secondred) + Math.abs(firstgreen - secondgreen) + Math.abs(firstblue - secondblue) <= margin;
-return true;
+        return true;
     }
 }

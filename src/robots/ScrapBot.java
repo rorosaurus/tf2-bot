@@ -39,6 +39,7 @@ public class ScrapBot extends SmartRobot {
     private final String SCHEMABASEURL = "http://api.steampowered.com/ITFItems_440/GetSchema/v0001/?language=en&key=KEYGOESHERE";
 
     // These MUST be replaced with a valid WebAPI key and the 64 bit id of your account
+    // TODO: Replace these with values from .properties file
     private final String WEBKEY = "898102520FDEC3CBC13A211A8B951C6B";
     private final String ACCOUNT64BITID = "76561198043649643";
 
@@ -53,7 +54,7 @@ public class ScrapBot extends SmartRobot {
         super();
         pointProvider = provider;
         outputter = out;
-        // TODO: Experiment with delays lower than 100ms
+        // TODO: Make AutoDelay a config parameter in the .properties file
         setAutoDelay(70);
     }
 
