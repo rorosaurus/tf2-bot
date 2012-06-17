@@ -15,14 +15,17 @@ I have committed the project files to allow others to easily open and try the pr
 
 This bot is *extremely* rough and unpolished as of now.  Use this tool at your own risk!
 
-Please do not use this bot without first reading and understanding how it will execute.
+Please do not use this bot without first reading the source and understanding how it will execute.
 
 Future development might allow for features such as limiting which items get scrapped,
 but that is not the case right now.
 
 ## Contributing
 
-If you wish to contribute to this project, please contact me at: [roryohayes@gmail.com](mailto:roryohayes@gmail.com).
+If you wish to contribute to this project, please fork it on GitHub,
+push your change to a named branch, then send me a pull request.
+
+If you have any questions, you can contact me at: [roryohayes@gmail.com](mailto:roryohayes@gmail.com).
 
 ## License
 
