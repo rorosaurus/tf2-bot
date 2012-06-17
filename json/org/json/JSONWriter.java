@@ -1,25 +1,61 @@
-/******************************************************************************
- * This file is part of tf2-bot.                                              *
- *                                                                            *
- * tf2-bot is free software: you can redistribute it and/or modify            *
- * it under the terms of the GNU General Public License as published by       *
- * the Free Software Foundation, either version 3 of the License, or          *
- * (at your option) any later version.                                        *
- *                                                                            *
- * tf2-bot is distributed in the hope that it will be useful,                 *
- * but WITHOUT ANY WARRANTY; without even the implied warranty of             *
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              *
- * GNU General Public License for more details.                               *
- *                                                                            *
- * You should have received a copy of the GNU General Public License          *
- * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
- ******************************************************************************/
-
 package org.json;
 
 import java.io.IOException;
 import java.io.Writer;
 
+/*
+Copyright (c) 2006 JSON.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+The Software shall be used for Good, not Evil.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+/**
+ * JSONWriter provides a quick and convenient way of producing JSON text.
+ * The texts produced strictly conform to JSON syntax rules. No whitespace is
+ * added, so the results are ready for transmission or storage. Each instance of
+ * JSONWriter can produce one JSON text.
+ * <p>
+ * A JSONWriter instance provides a <code>value</code> method for appending
+ * values to the
+ * text, and a <code>key</code>
+ * method for adding keys before values in objects. There are <code>array</code>
+ * and <code>endArray</code> methods that make and bound array values, and
+ * <code>object</code> and <code>endObject</code> methods which make and bound
+ * object values. All of these methods return the JSONWriter instance,
+ * permitting a cascade style. For example, <pre>
+ * new JSONWriter(myWriter)
+ *     .object()
+ *         .key("JSON")
+ *         .value("Hello, World!")
+ *     .endObject();</pre> which writes <pre>
+ * {"JSON":"Hello, World!"}</pre>
+ * <p>
+ * The first method called must be <code>array</code> or <code>object</code>.
+ * There are no methods for adding commas or colons. JSONWriter adds them for
+ * you. Objects and arrays can be nested up to 20 levels deep.
+ * <p>
+ * This can sometimes be easier than using a JSONObject to build a string.
+ * @author JSON.org
+ * @version 2011-11-24
+ */
 public class JSONWriter {
     private static final int maxdepth = 200;
 

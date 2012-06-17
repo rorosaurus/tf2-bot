@@ -1,21 +1,28 @@
-/******************************************************************************
- * This file is part of tf2-bot.                                              *
- *                                                                            *
- * tf2-bot is free software: you can redistribute it and/or modify            *
- * it under the terms of the GNU General Public License as published by       *
- * the Free Software Foundation, either version 3 of the License, or          *
- * (at your option) any later version.                                        *
- *                                                                            *
- * tf2-bot is distributed in the hope that it will be useful,                 *
- * but WITHOUT ANY WARRANTY; without even the implied warranty of             *
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              *
- * GNU General Public License for more details.                               *
- *                                                                            *
- * You should have received a copy of the GNU General Public License          *
- * along with tf2-bot.  If not, see <http://www.gnu.org/licenses/>.           *
- ******************************************************************************/
-
 package org.json;
+
+/*
+Copyright (c) 2002 JSON.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+The Software shall be used for Good, not Evil.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 
 import java.io.IOException;
 import java.io.Writer;
@@ -30,6 +37,56 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
+/**
+ * A JSONObject is an unordered collection of name/value pairs. Its
+ * external form is a string wrapped in curly braces with colons between the
+ * names and values, and commas between the values and names. The internal form
+ * is an object having <code>get</code> and <code>opt</code> methods for
+ * accessing the values by name, and <code>put</code> methods for adding or
+ * replacing values by name. The values can be any of these types:
+ * <code>Boolean</code>, <code>JSONArray</code>, <code>JSONObject</code>,
+ * <code>Number</code>, <code>String</code>, or the <code>JSONObject.NULL</code>
+ * object. A JSONObject constructor can be used to convert an external form
+ * JSON text into an internal form whose values can be retrieved with the
+ * <code>get</code> and <code>opt</code> methods, or to convert values into a
+ * JSON text using the <code>put</code> and <code>toString</code> methods.
+ * A <code>get</code> method returns a value if one can be found, and throws an
+ * exception if one cannot be found. An <code>opt</code> method returns a
+ * default value instead of throwing an exception, and so is useful for
+ * obtaining optional values.
+ * <p>
+ * The generic <code>get()</code> and <code>opt()</code> methods return an
+ * object, which you can cast or query for type. There are also typed
+ * <code>get</code> and <code>opt</code> methods that do type checking and type
+ * coercion for you. The opt methods differ from the get methods in that they
+ * do not throw. Instead, they return a specified value, such as null.
+ * <p>
+ * The <code>put</code> methods add or replace values in an object. For example,
+ * <pre>myString = new JSONObject().put("JSON", "Hello, World!").toString();</pre>
+ * produces the string <code>{"JSON": "Hello, World"}</code>.
+ * <p>
+ * The texts produced by the <code>toString</code> methods strictly conform to
+ * the JSON syntax rules.
+ * The constructors are more forgiving in the texts they will accept:
+ * <ul>
+ * <li>An extra <code>,</code>&nbsp;<small>(comma)</small> may appear just
+ *     before the closing brace.</li>
+ * <li>Strings may be quoted with <code>'</code>&nbsp;<small>(single
+ *     quote)</small>.</li>
+ * <li>Strings do not need to be quoted at all if they do not begin with a quote
+ *     or single quote, and if they do not contain leading or trailing spaces,
+ *     and if they do not contain any of these characters:
+ *     <code>{ } [ ] / \ : , = ; #</code> and if they do not look like numbers
+ *     and if they are not the reserved words <code>true</code>,
+ *     <code>false</code>, or <code>null</code>.</li>
+ * <li>Keys can be followed by <code>=</code> or <code>=></code> as well as
+ *     by <code>:</code>.</li>
+ * <li>Values can be followed by <code>;</code> <small>(semicolon)</small> as
+ *     well as by <code>,</code> <small>(comma)</small>.</li>
+ * </ul>
+ * @author JSON.org
+ * @version 2011-11-24
+ */
 public class JSONObject {
 
     /**
