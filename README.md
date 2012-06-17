@@ -2,7 +2,7 @@
 
 This is a small bot that can automatically scrap weapons into metal and combine metal.
 It can also assist the user in basic Steam trading.
-All ouput is handled by Robot.class, emulating keystrokes and clicks of a real user.
+All output is handled by Robot.class, emulating keystrokes and clicks of a real user.
 
 This app is written in Java.
 
@@ -26,7 +26,7 @@ If you wish to contribute to this project, please contact me at: [roryohayes@gma
 
 ## License
 
-To be determined!
+This software is licensed under the [GNU General Public License](http://www.gnu.org/licenses/gpl.html).
 
 
 
