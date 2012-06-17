@@ -2,56 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e23a94d-ed6b-492b-b7ab-b21a7694db77" name="Default" comment="Added README.md">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TF2Bot.iml" afterPath="$PROJECT_DIR$/TF2Bot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TF2Bot.ipr" afterPath="$PROJECT_DIR$/TF2Bot.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TF2Bot.iws" afterPath="$PROJECT_DIR$/TF2Bot.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.properties" afterPath="$PROJECT_DIR$/settings.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Metal.java" afterPath="$PROJECT_DIR$/src/pojos/Metal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/PointPlace.java" afterPath="$PROJECT_DIR$/src/pojos/PointPlace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Settings.java" afterPath="$PROJECT_DIR$/src/pojos/Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/TF2Class.java" afterPath="$PROJECT_DIR$/src/pojos/TF2Class.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pojos/Weapon.java" afterPath="$PROJECT_DIR$/src/pojos/Weapon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/PointProvider.java" afterPath="$PROJECT_DIR$/src/providers/PointProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/providers/SettingsProvider.java" afterPath="$PROJECT_DIR$/src/providers/SettingsProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/robots/ScrapBot.java" afterPath="$PROJECT_DIR$/src/robots/ScrapBot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/robots/SmartRobot.java" afterPath="$PROJECT_DIR$/src/robots/SmartRobot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/robots/TradeBot.java" afterPath="$PROJECT_DIR$/src/robots/TradeBot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/system/Outputter.java" afterPath="$PROJECT_DIR$/src/system/Outputter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/HelpWindow.java" afterPath="$PROJECT_DIR$/src/ui/HelpWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/MainWindow.java" afterPath="$PROJECT_DIR$/src/ui/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/MessagesEditor.java" afterPath="$PROJECT_DIR$/src/ui/MessagesEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/PointPrompter.java" afterPath="$PROJECT_DIR$/src/ui/PointPrompter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/ScrapButton.java" afterPath="$PROJECT_DIR$/src/ui/ScrapButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/ScrapPanel.java" afterPath="$PROJECT_DIR$/src/ui/ScrapPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/SettingsPanel.java" afterPath="$PROJECT_DIR$/src/ui/SettingsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/TradePanel.java" afterPath="$PROJECT_DIR$/src/ui/TradePanel.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\icon.png" afterPath="$PROJECT_DIR$/images/icon.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\metal.png" afterPath="$PROJECT_DIR$/images/metal.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\settings.png" afterPath="$PROJECT_DIR$/images/settings.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\testing\test.png" afterPath="$PROJECT_DIR$/images/testing/test.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\testing\test2.png" afterPath="$PROJECT_DIR$/images/testing/test2.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\testing\test3.png" afterPath="$PROJECT_DIR$/images/testing/test3.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\testing\test4.png" afterPath="$PROJECT_DIR$/images/testing/test4.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\testing\test5.png" afterPath="$PROJECT_DIR$/images/testing/test5.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\tf2.ico" afterPath="$PROJECT_DIR$/images/tf2.ico" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\images\trade.png" afterPath="$PROJECT_DIR$/images/trade.png" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\CDL.java" afterPath="$PROJECT_DIR$/json/org/json/CDL.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\Cookie.java" afterPath="$PROJECT_DIR$/json/org/json/Cookie.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\CookieList.java" afterPath="$PROJECT_DIR$/json/org/json/CookieList.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\HTTP.java" afterPath="$PROJECT_DIR$/json/org/json/HTTP.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\HTTPTokener.java" afterPath="$PROJECT_DIR$/json/org/json/HTTPTokener.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONArray.java" afterPath="$PROJECT_DIR$/json/org/json/JSONArray.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONException.java" afterPath="$PROJECT_DIR$/json/org/json/JSONException.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONML.java" afterPath="$PROJECT_DIR$/json/org/json/JSONML.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONObject.java" afterPath="$PROJECT_DIR$/json/org/json/JSONObject.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONString.java" afterPath="$PROJECT_DIR$/json/org/json/JSONString.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONStringer.java" afterPath="$PROJECT_DIR$/json/org/json/JSONStringer.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONTokener.java" afterPath="$PROJECT_DIR$/json/org/json/JSONTokener.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\JSONWriter.java" afterPath="$PROJECT_DIR$/json/org/json/JSONWriter.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\README" afterPath="$PROJECT_DIR$/json/org/json/README" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\XML.java" afterPath="$PROJECT_DIR$/json/org/json/XML.java" />
-      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\src\org\json\XMLTokener.java" afterPath="$PROJECT_DIR$/json/org/json/XMLTokener.java" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\icon.png" afterPath="$PROJECT_DIR$/src/images/icon.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\metal.png" afterPath="$PROJECT_DIR$/src/images/metal.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\settings.png" afterPath="$PROJECT_DIR$/src/images/settings.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\testing\test.png" afterPath="$PROJECT_DIR$/src/images/testing/test.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\testing\test2.png" afterPath="$PROJECT_DIR$/src/images/testing/test2.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\testing\test3.png" afterPath="$PROJECT_DIR$/src/images/testing/test3.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\testing\test4.png" afterPath="$PROJECT_DIR$/src/images/testing/test4.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\testing\test5.png" afterPath="$PROJECT_DIR$/src/images/testing/test5.png" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\tf2.ico" afterPath="$PROJECT_DIR$/src/images/tf2.ico" />
+      <change type="MOVED" beforePath="G:\Dropbox\Projects\GitHub\tf2-bot\images\trade.png" afterPath="$PROJECT_DIR$/src/images/trade.png" />
     </list>
     <ignored path="TF2Bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,10 +75,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="39" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.5862069">
+            <state line="28" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelpWindow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/HelpWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="64" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/MainWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="49" selection-start="2862" selection-end="2862" vertical-scroll-proportion="0.3275862">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -193,15 +179,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainWindow.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/MainWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="79" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -222,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ui/TradePanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/pojos/test.java" />
         <option value="$PROJECT_DIR$/src/pojos/Metal.java" />
         <option value="$PROJECT_DIR$/src/pojos/Settings.java" />
@@ -238,6 +213,8 @@
         <option value="$PROJECT_DIR$/src/org/json/CDL.java" />
         <option value="$PROJECT_DIR$/json/org/json/CDL.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ui/HelpWindow.java" />
+        <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
@@ -296,6 +273,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TF2Bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tf2-bot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -310,7 +301,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="copyright.profiles" />
+    <property name="options.lastSelected" value="preferences.sourceCode" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -512,16 +503,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18683997" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39694658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39687848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1373597" sideWeight="0.21962096" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1373597" sideWeight="0.35005575" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1373597" sideWeight="0.67001116" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1373597" sideWeight="0.7001115" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29988852" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,7 +555,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GNU license" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured project, fixed Copyright" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -580,6 +571,7 @@
     <MESSAGE value="Removed my personal Steam Web API key and Steam ID from settings.properties" />
     <MESSAGE value="Added README.md" />
     <MESSAGE value="Added GNU license" />
+    <MESSAGE value="Restructured project, fixed Copyright" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -589,30 +581,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pojos/PointPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pojos/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/TradePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="79" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -708,7 +679,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="39" selection-start="1891" selection-end="1891" vertical-scroll-proportion="0.5862069">
+        <state line="28" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/HelpWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="64" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="49" selection-start="2862" selection-end="2862" vertical-scroll-proportion="0.3275862">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -721,10 +715,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>tf2-bot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

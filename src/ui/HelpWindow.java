@@ -22,7 +22,7 @@ import pojos.PointPlace;
 import javax.swing.*;
 import java.awt.*;
 
-ublic class HelpWindow extends JFrame {
+public class HelpWindow extends JFrame {
 
     private PointPlace pointPlace;
     private JPanel rootPanel = new JPanel();
