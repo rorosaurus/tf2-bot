@@ -19,11 +19,9 @@ package robots;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import pojos.Metal;
-import pojos.PointPlace;
-import pojos.TF2Class;
-import pojos.Weapon;
+import pojos.*;
 import providers.PointProvider;
+import providers.SettingsProvider;
 import system.Outputter;
 
 import java.awt.*;
@@ -40,22 +38,25 @@ public class ScrapBot extends SmartRobot {
 
     // These MUST be replaced with a valid WebAPI key and the 64 bit id of your account
     // TODO: Replace these with values from .properties file
-    private final String WEBKEY = "";
-    private final String ACCOUNT64BITID = "";
+    private String WEBKEY;
+    private String ACCOUNT64BITID;
 
     private final PointProvider pointProvider;
+    private final SettingsProvider settingsProvider;
     private Outputter outputter;
 
     private JSONArray schemaItems;
     private JSONArray backpackItems;
     private ArrayList<Weapon> items = new ArrayList<Weapon>();
 
-    public ScrapBot(PointProvider provider, Outputter out) throws Exception {
+    public ScrapBot(PointProvider provider, SettingsProvider settings, Outputter out) throws Exception {
         super();
+        settingsProvider = settings;
         pointProvider = provider;
         outputter = out;
-        // TODO: Make AutoDelay a config parameter in the .properties file
-        setAutoDelay(70);
+        WEBKEY = settingsProvider.getSetting(Settings.webAPIKey);
+        ACCOUNT64BITID = settingsProvider.getSetting(Settings.steamID);
+        setAutoDelay(Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
     }
 
     private void getSchema() throws Exception {

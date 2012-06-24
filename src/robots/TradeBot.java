@@ -36,10 +36,10 @@ public class TradeBot extends SmartRobot {
      * @throws Exception - for the Robot
      * AutoDelay should not be lowered much more
      */
-    public TradeBot(Outputter out) throws Exception {
+    public TradeBot(Outputter out, int autodelay) throws Exception {
         super();
         outputter = out;
-        setAutoDelay(35);
+        setAutoDelay(autodelay);
     }
 
     /**
@@ -72,6 +72,7 @@ public class TradeBot extends SmartRobot {
                 doubleClick((firstItemLoc.x+(spacing*i)),(firstItemLoc.y+(spacing*j)));
             }
         }
+        verifyPageUpTo(4, 4, firstItemLoc);
     }
 
     /**
@@ -85,6 +86,7 @@ public class TradeBot extends SmartRobot {
      * @throws Exception - for the Robot
      */
     public void tradeItemsInFilter(int numOfItemsToTrade) throws Exception {
+        int numOfItemsToVerify = numOfItemsToTrade;
         // Compute the number of pages needed
         int numPages = (int) Math.ceil(numOfItemsToTrade/16f);
         // The next button is located at the current mouse location
@@ -102,12 +104,32 @@ public class TradeBot extends SmartRobot {
                     // Decrement the number of items remaining
                     numOfItemsToTrade--;
                     // Break out of the loop if we have added them all
-                    if(numOfItemsToTrade <= 0) break outerloop;
+                    if(numOfItemsToTrade <= 0){
+                        verifyPageUpTo(i, j, firstItemLoc);
+                        break outerloop;
+                    }
                 }
             }
+            verifyPageUpTo(4, 4, firstItemLoc);
             // Go to the next page, give the window enough time to update the display
             leftClick(nextButton.x, nextButton.y);
             Thread.sleep(500);
+        }
+    }
+
+    private void verifyPageUpTo(int a, int b, Point firstItemLoc) throws Exception{
+        outerloop:
+        for (int j=0;j<4;j++){
+            for (int i=0;i<4;i++){
+                Color boxColor = getPixelColor((firstItemLoc.x+(spacing*i)),(firstItemLoc.y+(spacing*j)));
+                if(!boxColor.equals(new Color(41, 41, 41))){
+                    doubleClick((firstItemLoc.x+(spacing*i)),(firstItemLoc.y+(spacing*j)));
+                }
+                // Break out of the loop if we have added them all
+                if(j >= b && i >= a){
+                    break outerloop;
+                }
+            }
         }
     }
 
@@ -135,6 +157,7 @@ public class TradeBot extends SmartRobot {
                     doubleClick((firstItemLoc.x+(spacing*i)),(firstItemLoc.y+(spacing*j)));
                 }
             }
+            verifyPageUpTo(4, 4, firstItemLoc);
             // Go to the next page, give the window enough time to update the display
             leftClick(nextButton.x, nextButton.y);
             Thread.sleep(500);

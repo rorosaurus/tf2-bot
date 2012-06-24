@@ -11,6 +11,8 @@ This app is written in Java.
 I am developing this bot using [IntelliJ IDEA](http://www.jetbrains.com/idea/download/index.html).
 I have committed the project files to allow others to easily open and try the project.
 
+I'm a one-man team right now, working on this in my (very limited) free time.  Development is anticipated to be slow.
+
 ## Warnings
 
 This bot is *extremely* rough and unpolished as of now.  Use this tool at your own risk!

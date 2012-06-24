@@ -60,12 +60,21 @@ public class SettingsPanel extends JPanel {
         }
         settingsPanel.add(steamIDArea);
 
+        settingsPanel.add(new JLabel("Trade Bot Autodelay (in ms)"));
+        final JSpinner autodelaySpinner = new JSpinner();
+        autodelaySpinner.setValue(40);
+        if(settingsProvider.getSetting(Settings.autodelay) != null){
+            autodelaySpinner.setValue(Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
+        }
+        settingsPanel.add(autodelaySpinner);
+
         Button applyButton = new Button("Apply Settings");
         applyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 settingsProvider.putSetting(Settings.webAPIKey, webAPIArea.getText());
                 settingsProvider.putSetting(Settings.steamID, steamIDArea.getText());
+                settingsProvider.putSetting(Settings.autodelay, autodelaySpinner.getValue().toString());
                 settingsProvider.writeProperties();
                 outputter.output("Settings saved.");
             }

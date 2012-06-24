@@ -49,7 +49,7 @@ public class TradePanel extends JPanel {
                 try {
                     outputter.output("Trading whole page in 3 seconds...");
                     Thread.sleep(3000);
-                    TradeBot robbie = new TradeBot(outputter);
+                    TradeBot robbie = new TradeBot(outputter, Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
                     robbie.tradePage();
                     outputter.output(robbie.getNumOfLeftClicks() + " clicks saved.");
                 } catch (Exception e) {
@@ -70,7 +70,7 @@ public class TradePanel extends JPanel {
                     int numOfItems = Integer.parseInt(numItems.getValue().toString());
                     outputter.output("Trading " + numOfItems + " items in 3 seconds...");
                     Thread.sleep(3000);
-                    TradeBot robbie = new TradeBot(outputter);
+                    TradeBot robbie = new TradeBot(outputter, Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
                     robbie.tradeItemsInFilter(numOfItems);
                     outputter.output(robbie.getNumOfLeftClicks() + " clicks saved.");
                 } catch (Exception e) {
@@ -93,7 +93,7 @@ public class TradePanel extends JPanel {
                     int numOfPages = Integer.parseInt(numPages.getValue().toString());
                     outputter.output("Trading " + numOfPages + " pages in 3 seconds...");
                     Thread.sleep(3000);
-                    TradeBot robbie = new TradeBot(outputter);
+                    TradeBot robbie = new TradeBot(outputter, Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
                     robbie.tradePagesOfFilter(numOfPages);
                     outputter.output(robbie.getNumOfLeftClicks() + " clicks saved.");
                 } catch (Exception e) {
@@ -127,7 +127,7 @@ public class TradePanel extends JPanel {
                 try {
                     outputter.output("TradeBot will chat in 5 seconds...");
                     Thread.sleep(5000);
-                    TradeBot robbie = new TradeBot(outputter);
+                    TradeBot robbie = new TradeBot(outputter, Integer.parseInt(settingsProvider.getSetting(Settings.autodelay)));
                     String messagesString = settingsProvider.getSetting(Settings.messages);
                     robbie.setMessagesToOutput(messagesString.split("\n"));
                     // TODO: Allow the user to stop this thread by clicking a button

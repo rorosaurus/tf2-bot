@@ -22,6 +22,7 @@ public enum Settings {
     webAPIKey,
     steamID,
     simulate,
-    messages;
+    messages,
+    autodelay;
 
 }

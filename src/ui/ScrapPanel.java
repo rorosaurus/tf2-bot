@@ -73,7 +73,7 @@ public class ScrapPanel extends JPanel {
                         Thread botThread = new Thread(new Runnable() {
                             public void run() {
                                 try {
-                                    ScrapBot robbie = new ScrapBot(pointProvider, outputter);
+                                    ScrapBot robbie = new ScrapBot(pointProvider, settingsProvider, outputter);
                                     robbie.scrapWeapons(true, scrapAllButton.getSimulate());
                                     if(!scrapAllButton.getSimulate()) outputter.output(robbie.getNumOfLeftClicks() + " clicks saved.");
                                 } catch (Exception e) {
@@ -101,7 +101,7 @@ public class ScrapPanel extends JPanel {
                     try {
                         outputter.output("Combining metal in 3 seconds...");
                         Thread.sleep(3000);
-                        ScrapBot robbie = new ScrapBot(pointProvider, outputter);
+                        ScrapBot robbie = new ScrapBot(pointProvider, settingsProvider, outputter);
                         robbie.combineMetal(Metal.SCRAP);
                         robbie.combineMetal(Metal.RECLAIMED);
                         outputter.output(robbie.getNumOfLeftClicks() + " clicks saved.");
@@ -121,7 +121,7 @@ public class ScrapPanel extends JPanel {
                     try {
                         outputter.output("Scrapping, Combining, and Sorting in 3 seconds...");
                         Thread.sleep(3000);
-                        ScrapBot robbie = new ScrapBot(pointProvider, outputter);
+                        ScrapBot robbie = new ScrapBot(pointProvider, settingsProvider, outputter);
                         robbie.scrapWeapons(true, false);
                         robbie.combineMetal(Metal.SCRAP);
                         robbie.combineMetal(Metal.RECLAIMED);

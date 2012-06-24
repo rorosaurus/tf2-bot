@@ -23,6 +23,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
+//TODO: verify mouse movements are in range
 public class SmartRobot extends Robot{
 
     private int numOfLeftClicks = 0;
